@@ -18,18 +18,18 @@
             <p>O seu aplicativo pessoal para envio de e-mails!</p>
         </div>
         <div class="row py-5">
-            <form action="" method="POST" class="col-md-12">
+            <form action="processa_envio.php" method="POST" class="col-md-12">
                 <div class="form-group">
                     <label for="idEmail">E-mail do destinatário</label>
-                    <input type="email" class="form-control" name="email" id="idEmail" placeholder="exemplo@exemplo.com">
+                    <input type="email" class="form-control" name="email" id="idEmail" placeholder="exemplo@exemplo.com" required>
                 </div>
                 <div class="form-group">
-                    <label for="idTitulo">Assunto</label>
-                    <input type="text" class="form-control" name="titulo" id="idTitulo">
+                    <label for="idAssunto">Assunto</label>
+                    <input type="text" class="form-control" name="assunto" id="idAssunto" required>
                 </div>
                 <div class="form-group">
-                    <label for="idAssunto">Mensagem</label>
-                    <textarea name="" class="form-control" name="assunto" id="idAssunto" cols="100" rows="5"></textarea>
+                    <label for="idMensagem">Mensagem</label>
+                    <textarea class="form-control" name="mensagem" id="idMensagem" required></textarea>
                 </div>
                 <div class="form-group text-right py-3">
                     <button type="submit" class="btn btn-success">Enviar E-mail</button>
